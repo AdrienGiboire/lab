@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <meta content="Snapshat Sticker Share" property="og:site_name" />
+    <meta content="SSH test" property="og:title" />
+    <meta content="https://adriengiboire.github.io/lab/testssh.png" property="og:image" />
+    <meta content="https://adriengiboire.github.io/lab/snapchat.html" property="og:url" />
+    <meta content="https://adriengiboire.github.io/lab/testssh.png" property="snapchat:sticker" />
+  </head>
+
+  <body>
+    <div
+      class="snapchat-creative-kit-share"
+      data-share-url="https://adriengiboire.github.io/lab/snapchat-share.html"></div>
+
+    <script>
+      // Load the SDK asynchronously
+      (function (d, s, id) {
+        var js, sjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "https://sdk.snapkit.com/js/v1/create.js";
+        sjs.parentNode.insertBefore(js, sjs);
+      }(document, 'script', 'snapkit-creative-kit-sdk'));
+    </script>
+  </body>
+</html>
